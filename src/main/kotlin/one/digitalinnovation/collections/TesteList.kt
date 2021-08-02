@@ -1,9 +1,9 @@
 package one.digitalinnovation.collections
 
 fun main() {
-    val joao = funcionario("Jõao", 1000.00, "CLT")
-    val pedro = funcionario("Pedro", 800.00,"PJ")
-    val maria = funcionario("Maria", 8000.00, "CLT")
+    val joao = Funcionario("Jõao", 1000.00, "CLT")
+    val pedro = Funcionario("Pedro", 800.00,"PJ")
+    val maria = Funcionario("Maria", 8000.00, "CLT")
 
     val funcionarios = listOf(joao,pedro,maria)
 
@@ -25,14 +25,3 @@ fun main() {
     //esse tipo de lista não conseguimos fazer mudanças
 }
 
-data class funcionario(
-    val nome:String,
-    val salario:Double,
-    val tipoContratacao:String
-) {
-    override fun toString(): String  =
-        """
-            Nome: $nome
-            Salário: $salario
-        """.trimIndent()
-    } //tratamento da saída
