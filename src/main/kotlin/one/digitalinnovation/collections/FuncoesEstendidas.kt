@@ -8,4 +8,5 @@ fun Array<BigDecimal>.somatoria() = this.reduce {
 
 fun Array<BigDecimal>.media() =
     if(this.isEmpty()) BigDecimal.ZERO
-    else this.somatoria() / this.size.toBigDecimal()  //Extension function
+    else this.somatoria() / this.size.toBigDecimal()
+//Extension function

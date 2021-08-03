@@ -6,7 +6,6 @@ fun main() {
         "1500".toBigDecimal(),
         "4000".toBigDecimal()
     )
-
     println("________________")
     println(salarios.somatoria())
 
